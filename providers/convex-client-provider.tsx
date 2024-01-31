@@ -5,7 +5,6 @@ import { ConvexProviderWithClerk } from "convex/react-clerk";
 import {
   AuthLoading,
   Authenticated,
-  ConvexProvider,
   ConvexReactClient,
 } from "convex/react";
 import { Loading } from "@/components/auth/loading";
