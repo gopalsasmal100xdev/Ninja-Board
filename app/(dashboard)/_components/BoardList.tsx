@@ -2,7 +2,7 @@
 
 import { EmptyFavorites } from "./empty-favorits";
 import { EmptySearch } from "./empty-search";
-import { EmptyBoards } from "./mpty-board";
+import { EmptyBoards } from "./empty-boards";
 
 interface BoardListPageProps {
   orgId: string;
