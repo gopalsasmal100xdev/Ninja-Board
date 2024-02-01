@@ -1,15 +1,19 @@
 "use client";
 
 import { Canvas } from "./_components/canvas";
+import { Loading } from "./_components/loading";
+import { Room } from "./_components/room";
 
 interface BoardProps {
-    params : {
-        boardId: string
-    }
+  params: {
+    boardId: string;
+  };
 }
 
-export default function BoardIdPage({params}: BoardProps) {
+export default function BoardIdPage({ params }: BoardProps) {
   return (
-      <Canvas boardId={params.boardId}/>
+    <Room roomId={params.boardId} fallback={<Loading />}>
+      <Canvas boardId={params.boardId} />
+    </Room>
   );
 }
