@@ -19,12 +19,14 @@ export const EmptyBoards = () => {
     mutate({
       orgId: organization.id,
       title: "untitled",
-    }).then((id)=>{
-      toast.success("Board created");
-      // TODO : Redirected to board {id}
-    }).catch((err)=>{
-      toast.error("Failed to create board!");
     })
+      .then((id) => {
+        toast.success("Board created");
+        router.push(`/board/${id}`);
+      })
+      .catch((err) => {
+        toast.error("Failed to create board!");
+      });
   };
 
   return (
