@@ -1,5 +1,4 @@
 import { Loader } from "lucide-react";
-import { Skeleton } from "@/components/ui/skeleton";
 import { InfoSkeleton } from "./info";
 import { ParticipantsSkeleton } from "./participants";
 import { ToolbarSkeleton } from "./toolbar";
