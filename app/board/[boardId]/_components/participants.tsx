@@ -1,8 +1,8 @@
 "use client";
 
-import { UserAvatar } from "@/app/(dashboard)/_components/user-avatar";
 import { connectionIdToColor } from "@/lib/utils";
 import { useOthers, useSelf } from "@/liveblocks.config";
+import { UserAvatar } from "./user-avatar";
 
 export const MAX_SHOWN_USERS = 1;
 
