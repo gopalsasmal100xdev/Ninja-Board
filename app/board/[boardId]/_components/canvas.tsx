@@ -65,7 +65,10 @@ export const Canvas = ({ boardId }: CanvasProps) => {
         onWheel={onWheel}
         onPointerMove={onPointerMove}
         onPointerLeave={onPointerLeave}>
-        <g>
+        <g
+          style={{
+            transform: `translate(${camera.x}px, ${camera.y}px)`,
+          }}>
           <CursorPresence />
         </g>
       </svg>
